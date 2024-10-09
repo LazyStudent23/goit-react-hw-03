@@ -1,3 +1,7 @@
+.searchbox_wrapper{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .label {
     position: relative;
     display: flex;
@@ -7,7 +11,6 @@
 }
 
 .label_title {
-    align-self: center;
     font-weight: 500;
 }
 

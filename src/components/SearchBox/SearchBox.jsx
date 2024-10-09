@@ -4,7 +4,7 @@ import styles from "./SearchBox.module.css";
 
 const SearchBox = ({ value, onSearch }) => {
   return (
-    <div>
+    <div className={styles.searchbox_wrapper}>
       <label className={styles.label}>
         <span className={styles.label_title}>
           Find contacts by name or number

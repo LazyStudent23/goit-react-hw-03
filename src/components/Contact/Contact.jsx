@@ -8,14 +8,16 @@ const Contact = ({ user, onDelete }) => {
   return (
     <>
       <div className={styles.details}>
-        <p className={styles.info}>
-          <BiSolidUser className={styles.icon} />
-          {name}
-        </p>
-        <p className={styles.info}>
-          <MdOutlinePhoneIphone className={styles.icon} />
-          {number}
-        </p>
+        <div className={styles.info_wrapper}>
+          <p className={styles.info}>
+            <BiSolidUser className={styles.icon} />
+            {name}
+          </p>
+          <p className={styles.info}>
+            <MdOutlinePhoneIphone className={styles.icon} />
+            {number}
+          </p>
+        </div>
         <button
           onClick={() => {
             onDelete(id);

@@ -9,8 +9,10 @@ import "./App.css";
 
 const App = () => {
   const [contacts, setContacts] = useState(() => {
-    JSON.parse(window.localStorage.getItem("storage-contacts")) &&
-      initialContacts;
+    return (
+      JSON.parse(window.localStorage.getItem("storage-contacts")) ||
+      initialContacts
+    );
   });
 
   useEffect(() => {

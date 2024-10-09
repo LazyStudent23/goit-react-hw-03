@@ -2,17 +2,15 @@
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    min-height: 178px;
+    padding: 0px;
+    box-sizing: border-box;
 }
 
 .user_card {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 12px 8px;
     width: calc((100% - 60px) / 4);
     max-height: 80px;
     border: 2px solid #555555;
     border-radius: 8px;
-    background-color: rgba(194, 234, 250, 0.7);
+    background-color: rgba(105, 240, 72, 0.7);
 }
